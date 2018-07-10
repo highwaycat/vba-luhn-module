@@ -3,7 +3,7 @@ Public Function LUHN(number As String)
     number = MULTIPLY_SECONDS(number)
     Dim sum As Integer
     sum = SUM_DIGITS(number)
-    LUHN = sum Mod 9
+    LUHN = sum Mod 10
 End Function
 
 Private Function MULTIPLY_SECONDS(number As String)
